@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "jsx": "preserve",
+    "noLib": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*", "test"],
+  "exclude": ["node_modules"]
+}
