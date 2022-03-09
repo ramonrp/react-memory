@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-
+import { COLORS, WEIGHTS } from './theme';
 const GlobalStyles = createGlobalStyle`
 /*
   1. Use a more-intuitive box-sizing model.
@@ -27,6 +27,7 @@ html, body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 /*
   6. Improve media defaults
@@ -53,6 +54,21 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+html{
+  --color-white1: hsl(${COLORS.white1});
+  --color-white2: hsl(${COLORS.white2});
+  --color-orange: hsl(${COLORS.orange});
+  --color-blue-100: hsl(${COLORS.blue[100]});
+  --color-blue-300: hsl(${COLORS.blue[300]});
+  --color-blue-500: hsl(${COLORS.blue[500]});
+  --color-blue-700: hsl(${COLORS.blue[700]});
+  --color-blue-900: hsl(${COLORS.blue[900]});
+
+  --weight-regular:${WEIGHTS.regular};
+  --weight-bold:${WEIGHTS.bold};
+}
+
 `;
 
 export { GlobalStyles };
